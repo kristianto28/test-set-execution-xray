@@ -8,7 +8,13 @@ const gqlUrl = `${xrayUrl}/graphql`;
 const authUrl = `${xrayUrl}/authenticate`;
 
 // Background color for error cell
-const errorBgColor = '#FFCAC7';
+const errorBgColor = '#FFB6B3';
 
-// Execution result array
-var executionResult = ['PASSED', 'FAILED', 'EXECUTING', 'TO DO'];
+// Background color for succeed cell
+const succeedBgColor = '#BDE7BD';
+
+// Execution result expected array
+var executionResult = ['PASSED', 'FAILED', 'EXECUTING', 'TO DO', 'NOT TESTED'];
+
+// Skipped execution result is used for checking purpose. TO DO and NOT TESTED test case will be skipped during data update
+var skippedExecutionResult = ['TO DO', 'NOT TESTED']
